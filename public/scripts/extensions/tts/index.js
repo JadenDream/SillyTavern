@@ -31,6 +31,7 @@ import { GoogleNativeTtsProvider } from './google-native.js';
 import { ChatterboxTtsProvider } from './chatterbox.js';
 import { KokoroTtsProvider } from './kokoro.js';
 import { TtsWebuiProvider } from './tts-webui.js';
+import { FishAudioTtsProvider } from './fish-audio.js';
 
 const UPDATE_INTERVAL = 1000;
 const wrapper = new ModuleWorkerWrapper(moduleWorker);
@@ -136,6 +137,7 @@ const ttsProviders = {
     'TTS WebUI': TtsWebuiProvider,
     VITS: VITSTtsProvider,
     XTTSv2: XTTSTtsProvider,
+    'Fish Audio': FishAudioTtsProvider,
 };
 let ttsProvider;
 let ttsProviderName;
